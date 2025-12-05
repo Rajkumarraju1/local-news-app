@@ -2,25 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>https://yourdomain.com/</loc>
+    <loc>https://www.localnewsindia.in/</loc>
     <changefreq>hourly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>https://yourdomain.com/about</loc>
+    <loc>https://www.localnewsindia.in/about</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://yourdomain.com/contact</loc>
+    <loc>https://www.localnewsindia.in/contact</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://yourdomain.com/privacy-policy</loc>
+    <loc>https://www.localnewsindia.in/privacy-policy</loc>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
