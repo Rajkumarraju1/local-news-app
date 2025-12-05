@@ -24,9 +24,39 @@ export default function Navbar() {
 
         {/* RIGHT → Desktop Menu */}
         <div className="hidden md:flex items-center gap-8">
-          <Link to="/about" className="text-white hover:text-blue-300">About</Link>
-          <Link to="/contact" className="text-white hover:text-blue-300">Contact</Link>
-          <Link to="/privacy-policy" className="text-white hover:text-blue-300">Privacy</Link>
+          <Link
+  to="/about"
+  className="
+    text-black md:text-white        /* mobile black, desktop white */
+    dark:text-white                 /* dark mode always white */
+    hover:text-blue-500
+  "
+>
+  About
+</Link>
+
+<Link
+  to="/contact"
+  className="
+    text-black md:text-white 
+    dark:text-white
+    hover:text-blue-500
+  "
+>
+  Contact
+</Link>
+
+<Link
+  to="/privacy-policy"
+  className="
+    text-black md:text-white 
+    dark:text-white
+    hover:text-blue-500
+  "
+>
+  Privacy
+</Link>
+
           <ThemeToggle />
         </div>
 
