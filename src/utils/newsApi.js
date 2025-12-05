@@ -1,5 +1,5 @@
 export async function fetchNews(language) {
-  const API_KEY = "pub_04ce5c5c6a984111ad88db9b8576b3f1"; // Replace with your key other account :  pub_73688e7d4e6789934302705d47e31f7b785a0  other 2: pub_04ce5c5c6a984111ad88db9b8576b3f1
+  const API_KEY = "pub_db385b9685934a3a90ce8442af351fb9"; // Replace with your key other account :  pub_73688e7d4e6789934302705d47e31f7b785a0  other 2:  pub_db385b9685934a3a90ce8442af351fb9
 
   const url = `https://newsdata.io/api/1/news?apikey=${API_KEY}&language=${language}`;
 
