@@ -1,16 +1,15 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";   // ⭐ REQUIRED
 import Navbar from "../components/Navbar";
 import CategoryTabs from "../components/CategoryTabs";
 import NewsCard from "../components/NewsCard";
 import { fetchNews } from "../utils/newsApi";
 import Footer from "../components/Footer";
-
 import AdSidebar from "../components/ads/AdSidebar";
 import AdInline from "../components/ads/AdInline";
 import BackToTop from "../components/BackToTop";
 
-
-const newsCache = {}; // 🔥 Cache enabled
+const newsCache = {};
 
 export default function Home() {
   const [category, setCategory] = useState("Telugu");
@@ -27,7 +26,6 @@ export default function Home() {
   useEffect(() => {
     async function loadNews() {
       const lang = langMap[category];
-
       if (newsCache[lang]) {
         setNews(newsCache[lang]);
         return;
@@ -36,7 +34,6 @@ export default function Home() {
       setNews([]);
 
       const data = await fetchNews(lang);
-
       if (!Array.isArray(data)) {
         setNews([]);
         return;
@@ -53,51 +50,88 @@ export default function Home() {
     <>
       <Navbar />
 
-      <div className="pt-24">
-        <CategoryTabs current={category} onChange={setCategory} />
+      <main className="pt-24 flex justify-center">
+        <div className="w-full max-w-6xl px-4">
 
-        <div className="flex justify-center gap-6 p-4">
+          <CategoryTabs current={category} onChange={setCategory} />
 
-          {/* LEFT SIDEBAR AD */}
-          <div className="hidden lg:block w-1/5">
-            <AdSidebar />
+          {/* ⭐⭐⭐ FEATURED ARTICLES SECTION — ADD HERE ⭐⭐⭐ */}
+          <div className="max-w-5xl mx-auto mt-10 p-6 bg-white dark:bg-[#0c1624] rounded-xl shadow-lg">
+            <h2 className="text-2xl font-bold mb-4">Featured Articles</h2>
+
+            <div className="grid md:grid-cols-2 gap-4">
+              <Link to="/article/1" className="hover:text-blue-600 font-semibold">
+                📌 Rising Interest in Local Digital News Platforms
+              </Link>
+
+              <Link to="/article/2" className="hover:text-blue-600 font-semibold">
+                📌 AI Adoption Growing in Indian Villages
+              </Link>
+
+              <Link to="/article/3" className="hover:text-blue-600 font-semibold">
+                📌 Indian Youth Returning to Traditional Careers
+              </Link>
+
+              <Link to="/article/4" className="hover:text-blue-600 font-semibold">
+                📌 Digital Payments Expansion in Rural India
+              </Link>
+
+              <Link to="/article/5" className="hover:text-blue-600 font-semibold">
+                📌 Rise of Regional OTT Platforms in India
+              </Link>
+              <Link to="/article/6" className="hover:text-blue-600 font-semibold">
+                📌 Growth of Local Tourism in India: Small Places Getting Big Attention
+             </Link>
+
+            <Link to="/article/7" className="hover:text-blue-600 font-semibold">
+               📌 How Indian Government Services Are Becoming Digital (UPI, DigiLocker, etc.)
+            </Link>
+
+            <Link to="/article/8" className="hover:text-blue-600 font-semibold">
+              📌 India’s Renewable Energy Push: Solar & Wind Power Growth
+            </Link>
+            </div>
           </div>
+          {/* ⭐⭐⭐ END FEATURED ARTICLES ⭐⭐⭐ */}
 
-          {/* MAIN CONTENT */}
-          <div className="w-full lg:w-3/5 glass-card glass-shadow p-6 rounded-xl">
 
-            {news.length === 0 ? (
-              <div className="space-y-6">
-                {[1, 2, 3, 4].map((i) => (
-                  <div key={i} className="glass-card p-4">
-                    <div className="skeleton h-48 w-full mb-4"></div>
-                    <div className="skeleton h-4 w-3/4 mb-2"></div>
-                    <div className="skeleton h-4 w-1/2"></div>
-                  </div>
-                ))}
-              </div>
-            ) : (
-              news.map((article, index) => (
-                <div key={index}>
-                  <NewsCard article={article} />
+          {/* MAIN GRID */}
+          <div className="grid grid-cols-12 gap-6 mt-6">
 
-                  {/* INLINE AD EVERY 4 NEWS CARDS */}
-                  {(index + 1) % 4 === 0 && <AdInline />}
+            <aside className="hidden lg:block col-span-2">
+              <AdSidebar />
+            </aside>
+
+            <section className="col-span-12 lg:col-span-8">
+              {news.length === 0 ? (
+                <div className="space-y-6">
+                  {[1, 2, 3, 4].map((i) => (
+                    <div key={i} className="article-card p-4 animate-pulse">
+                      <div className="bg-gray-200 dark:bg-gray-800 h-40 rounded mb-3" />
+                      <div className="h-4 bg-gray-200 dark:bg-gray-800 w-3/4 mb-2 rounded" />
+                      <div className="h-4 bg-gray-200 dark:bg-gray-800 w-1/2 rounded" />
+                    </div>
+                  ))}
                 </div>
-              ))
-            )}
+              ) : (
+                news.map((article, index) => (
+                  <div key={index}>
+                    <NewsCard article={article} />
+                    {(index + 1) % 4 === 0 && <AdInline />}
+                  </div>
+                ))
+              )}
+            </section>
+
+            <aside className="hidden lg:block col-span-2">
+              <AdSidebar />
+            </aside>
 
           </div>
-
-          {/* RIGHT SIDEBAR AD */}
-          <div className="hidden lg:block w-1/5">
-            <AdSidebar />
-          </div>
-
         </div>
-      </div>
+      </main>
 
-            <BackToTop />
+      <BackToTop />
       <Footer />
     </>
   );

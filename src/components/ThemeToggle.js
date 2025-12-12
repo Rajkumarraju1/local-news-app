@@ -1,26 +1,35 @@
 import { useEffect, useState } from "react";
 
 export default function ThemeToggle() {
-  const [dark, setDark] = useState(
-    localStorage.getItem("theme") === "dark"
-  );
+  const [dark, setDark] = useState(() => {
+    try {
+      const v = localStorage.getItem("ln_theme");
+      if (v) return v === "dark";
+      // default: follow system
+      return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+    } catch {
+      return false;
+    }
+  });
 
   useEffect(() => {
+    const root = document.documentElement;
     if (dark) {
-      document.documentElement.classList.add("dark");
-      localStorage.setItem("theme", "dark");
+      root.classList.add("dark");
+      localStorage.setItem("ln_theme", "dark");
     } else {
-      document.documentElement.classList.remove("dark");
-      localStorage.setItem("theme", "light");
+      root.classList.remove("dark");
+      localStorage.setItem("ln_theme", "light");
     }
   }, [dark]);
 
   return (
-    <button 
+    <button
       onClick={() => setDark(!dark)}
-      className="glass px-3 py-2 rounded-xl text-white"
+      aria-label="Toggle theme"
+      className="px-3 py-1 rounded-md border hover:bg-gray-100 dark:hover:bg-white/5 transition text-sm"
     >
-      {dark ? "☀ Light" : "🌙 Dark"}
+      {dark ? "🌙 Dark" : "☀️ Light"}
     </button>
   );
 }

@@ -6,77 +6,55 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="glass fixed top-0 left-0 w-full z-50 backdrop-blur-xl bg-white/10 dark:bg-black/20 border-b border-white/20 shadow-lg px-4 py-3">
+    <nav className="fixed top-0 left-0 w-full z-50 site-nav bg-white/70 dark:bg-black/40 backdrop-blur-md border-b">
 
-      <div className="flex justify-between items-center">
+      {/* DESKTOP: px-20 | MOBILE: px-4 */}
+      <div className="flex items-center justify-between h-16 px-4 md:px-20">
 
-        {/* LEFT → Logo + Title */}
+        {/* LEFT SIDE - LOGO & TITLE */}
         <Link to="/" className="flex items-center gap-3">
-          <img 
-             src="/localnews.png"
-             alt="Local News Logo"
-             className="w-10 h-10 object-contain p-1 rounded-lg bg-white shadow ms-3"
+          <img
+            src="/localnews.png"
+            className="w-9 h-9 block dark:hidden rounded-sm"
           />
-          <h1 className="text-xl md:text-2xl font-bold text-white drop-shadow">
-            Local News
-          </h1>
+          <img
+            src="/localnews-white.png"
+            className="w-9 h-9 hidden dark:block rounded-sm"
+          />
+
+          <div>
+            <h1 className="text-lg md:text-xl font-semibold">Local News</h1>
+
+            {/* HIDE THIS ON MOBILE */}
+            <p className="text-[10px] text-gray-600 dark:text-gray-300 hidden md:block">
+              Telugu • Tamil • Kannada • Malayalam • Hindi
+            </p>
+          </div>
         </Link>
 
-        {/* RIGHT → Desktop Menu */}
-        <div className="hidden md:flex items-center gap-8">
-          <Link
-  to="/about"
-  className="
-    text-black md:text-white        /* mobile black, desktop white */
-    dark:text-white                 /* dark mode always white */
-    hover:text-blue-500
-  "
->
-  About
-</Link>
-
-<Link
-  to="/contact"
-  className="
-    text-black md:text-white 
-    dark:text-white
-    hover:text-blue-500
-  "
->
-  Contact
-</Link>
-
-<Link
-  to="/privacy-policy"
-  className="
-    text-black md:text-white 
-    dark:text-white
-    hover:text-blue-500
-  "
->
-  Privacy
-</Link>
-
+        {/* RIGHT SIDE MENU — DESKTOP ONLY */}
+        <div className="hidden md:flex items-center gap-6">
+          <Link to="/about" className="text-sm hover:text-blue-600">About</Link>
+          <Link to="/contact" className="text-sm hover:text-blue-600">Contact</Link>
+          <Link to="/privacy-policy" className="text-sm hover:text-blue-600">Privacy</Link>
           <ThemeToggle />
         </div>
 
-        {/* RIGHT → Mobile Icons */}
-        <div className="flex md:hidden items-center gap-4">
+        {/* MOBILE MENU BUTTON — Aligned to Right */}
+        <div className="flex md:hidden items-center gap-4 pr-2">
           <ThemeToggle />
-
-          {/* Hamburger */}
           <button onClick={() => setMenuOpen(!menuOpen)}>
-            <span className="text-white text-3xl">☰</span>
+            <span className="text-3xl">☰</span>
           </button>
         </div>
       </div>
 
-      {/* MOBILE MENU DROPDOWN */}
+      {/* MOBILE MENU */}
       {menuOpen && (
-        <div className="md:hidden mt-3 glass rounded-xl px-4 py-3 flex flex-col gap-3">
-          <Link to="/about" className="text-white">About</Link>
-          <Link to="/contact" className="text-white">Contact</Link>
-          <Link to="/privacy-policy" className="text-white">Privacy</Link>
+        <div className="md:hidden px-6 py-3 bg-white dark:bg-black border-t">
+          <Link to="/about" className="block py-2">About</Link>
+          <Link to="/contact" className="block py-2">Contact</Link>
+          <Link to="/privacy-policy" className="block py-2">Privacy</Link>
         </div>
       )}
     </nav>
