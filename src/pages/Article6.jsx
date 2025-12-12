@@ -8,17 +8,46 @@ export default function Article6() {
 
     <>
    
-
-<Helmet>
+    <Helmet>
   <title>Growth of Local Tourism in India: Small Places Getting Big Attention</title>
-  <meta
-    name="description"
-    content="Indian travellers are exploring lesser-known destinations more than ever. Local tourism is growing fast."
+  <meta 
+    name="description" 
+    content="Small towns and rural destinations in India are becoming major tourist hotspots." 
   />
+
+  <link rel="canonical" href="https://www.localnewsindia.in/article/6" />
+
+  <meta property="og:type" content="article" />
   <meta property="og:title" content="Growth of Local Tourism in India" />
-  <meta property="og:description" content="Small towns and hidden gems across India are becoming major tourist hotspots." />
-  <meta property="og:image" content="/images/article6.png" />
+  <meta property="og:description" content="Why small Indian destinations are suddenly trending." />
+  <meta property="og:image" content="https://www.localnewsindia.in/tourism-india.png" />
+  <meta property="og:url" content="https://www.localnewsindia.in/article/6" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Growth of Local Tourism in India" />
+  <meta name="twitter:description" content="India's rural tourism is attracting massive attention." />
+  <meta name="twitter:image" content="https://www.localnewsindia.in/tourism-india.png" />
+
+  <script type="application/ld+json">
+  {`
+  {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    "headline": "Growth of Local Tourism in India: Small Places Getting Big Attention",
+    "image": "https://www.localnewsindia.in/tourism-india.png",
+    "datePublished": "2025-12-14",
+    "author": {"@type": "Organization", "name": "Local News India"},
+    "publisher": {
+      "@type": "Organization",
+      "name": "Local News India",
+      "logo": {"@type": "ImageObject", "url": "https://www.localnewsindia.in/localnews.png"}
+    },
+    "description": "Rural and local tourism is rising as travelers prefer peaceful, cultural destinations."
+  }
+  `}
+  </script>
 </Helmet>
+
 
     <div className="min-h-screen bg-gray-50 dark:bg-[#07101a] py-10 px-4">
 

@@ -7,16 +7,45 @@ export default function Article1() {
     <>
       {/* ⭐ HELMET SEO TAGS HERE */}
       <Helmet>
-        <title>Rising Interest in Local Digital News Platforms Across India</title>
-        <meta
-          name="description"
-          content="Digital news consumption in India is rising quickly. Learn why local digital news platforms are becoming popular across regions."
-        />
-        <meta property="og:title" content="Rising Digital News Trends in India" />
-        <meta property="og:description" content="Why Indians prefer local digital news platforms over national media." />
-        <meta property="og:image" content="/images/news.png" />
-        <meta property="og:url" content="https://www.localnewsindia.in/article/1" />
-      </Helmet>
+  <title>Rising Interest in Local Digital News Platforms Across India</title>
+  <meta 
+    name="description" 
+    content="Digital news consumption is rising across India as regional platforms gain popularity through accessibility and trust." 
+  />
+
+  <link rel="canonical" href="https://www.localnewsindia.in/article/1" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Rising Interest in Local Digital News Platforms Across India" />
+  <meta property="og:description" content="Why Indians prefer regional and hyperlocal digital news sources." />
+  <meta property="og:image" content="https://www.localnewsindia.in/news.png" />
+  <meta property="og:url" content="https://www.localnewsindia.in/article/1" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Rising Interest in Local Digital News Platforms Across India" />
+  <meta name="twitter:description" content="A deep look into India's growing digital news shift." />
+  <meta name="twitter:image" content="https://www.localnewsindia.in/news.png" />
+
+  <script type="application/ld+json">
+  {`
+  {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    "headline": "Rising Interest in Local Digital News Platforms Across India",
+    "image": "https://www.localnewsindia.in/news.png",
+    "datePublished": "2025-12-08",
+    "author": {"@type": "Organization", "name": "Local News India"},
+    "publisher": {
+      "@type": "Organization",
+      "name": "Local News India",
+      "logo": {"@type": "ImageObject", "url": "https://www.localnewsindia.in/localnews.png"}
+    },
+    "description": "Digital news consumption is rising across India as readers shift to local platforms."
+  }
+  `}
+  </script>
+</Helmet>
+
       {/* END HELMET */}
     <div className="min-h-screen bg-gray-50 dark:bg-[#07101a] py-10 px-4">
 

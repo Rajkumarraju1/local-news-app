@@ -6,17 +6,46 @@
  export default function Article4() {
   return (
     <>
-   
-<Helmet>
-  <title>Digital Payments Expansion in Rural India: UPI Goes Everywhere</title>
-  <meta
-    name="description"
-    content="UPI and digital payments are transforming rural India, enabling fast, safe, and cashless transactions."
+  <Helmet>
+  <title>Digital Payments Expansion in Rural India</title>
+  <meta 
+    name="description" 
+    content="UPI and digital payments are rapidly expanding across rural India, boosting financial inclusion." 
   />
+
+  <link rel="canonical" href="https://www.localnewsindia.in/article/4" />
+
+  <meta property="og:type" content="article" />
   <meta property="og:title" content="Digital Payments Expansion in Rural India" />
-  <meta property="og:description" content="How UPI and digital wallets are reaching remote villages across India." />
-  <meta property="og:image" content="/images/article4.png" />
+  <meta property="og:description" content="How UPI and QR codes are bringing financial access to villages." />
+  <meta property="og:image" content="https://www.localnewsindia.in/digital-payments.png" />
+  <meta property="og:url" content="https://www.localnewsindia.in/article/4" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Digital Payments Expansion in Rural India" />
+  <meta name="twitter:description" content="Rural India is rapidly adopting digital financial tools." />
+  <meta name="twitter:image" content="https://www.localnewsindia.in/digital-payments.png" />
+
+  <script type="application/ld+json">
+  {`
+  {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    "headline": "Digital Payments Expansion in Rural India",
+    "image": "https://www.localnewsindia.in/digital-payments.png",
+    "datePublished": "2025-12-12",
+    "author": {"@type": "Organization", "name": "Local News India"},
+    "publisher": {
+      "@type": "Organization",
+      "name": "Local News India",
+      "logo": {"@type": "ImageObject", "url": "https://www.localnewsindia.in/localnews.png"}
+    },
+    "description": "Digital payments like UPI and QR codes are transforming rural commerce."
+  }
+  `}
+  </script>
 </Helmet>
+
 
     <div className="min-h-screen bg-white dark:bg-[#07101a] py-10">
       <div className="max-w-3xl mx-auto p-6 bg-white dark:bg-[#07101a] rounded-xl shadow">

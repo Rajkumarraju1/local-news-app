@@ -6,17 +6,46 @@ export default function Article5() {
   return (
     <>
    
-
-<Helmet>
+    <Helmet>
   <title>Rise of Regional OTT Platforms in India</title>
-  <meta
-    name="description"
-    content="Regional OTT platforms in India are booming. More viewers now prefer content in their own language."
+  <meta 
+    name="description" 
+    content="Regional OTT platforms are booming as people prefer content in their own languages." 
   />
+
+  <link rel="canonical" href="https://www.localnewsindia.in/article/5" />
+
+  <meta property="og:type" content="article" />
   <meta property="og:title" content="Rise of Regional OTT Platforms in India" />
-  <meta property="og:description" content="Regional language OTT content is growing rapidly—here’s why." />
-  <meta property="og:image" content="/images/article5.png" />
+  <meta property="og:description" content="How local-language streaming platforms are reshaping entertainment." />
+  <meta property="og:image" content="https://www.localnewsindia.in/regional-ott.png" />
+  <meta property="og:url" content="https://www.localnewsindia.in/article/5" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Rise of Regional OTT Platforms in India" />
+  <meta name="twitter:description" content="Regional OTT streaming is expanding faster than ever." />
+  <meta name="twitter:image" content="https://www.localnewsindia.in/regional-ott.png" />
+
+  <script type="application/ld+json">
+  {`
+  {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    "headline": "Rise of Regional OTT Platforms in India",
+    "image": "https://www.localnewsindia.in/regional-ott.png",
+    "datePublished": "2025-12-13",
+    "author": {"@type": "Organization", "name": "Local News India"},
+    "publisher": {
+      "@type": "Organization",
+      "name": "Local News India",
+      "logo": {"@type": "ImageObject", "url": "https://www.localnewsindia.in/localnews.png"}
+    },
+    "description": "Regional OTT content is gaining huge popularity across India."
+  }
+  `}
+  </script>
 </Helmet>
+
 
     <div className="min-h-screen bg-white dark:bg-[#07101a] py-10">
       <div className="max-w-3xl mx-auto p-6 bg-white dark:bg-[#07101a] rounded-xl shadow">

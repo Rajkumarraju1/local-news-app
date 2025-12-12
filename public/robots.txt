@@ -1,7 +1,11 @@
- User-agent: *
+User-agent: *
 Allow: /
 Disallow: /admin/
 Disallow: /login/
 Disallow: /api/
+Disallow: /server-status
+
+# Crawl-delay helps slow Googlebot if server is small (optional)
+Crawl-delay: 2
 
 Sitemap: https://www.localnewsindia.in/sitemap.xml

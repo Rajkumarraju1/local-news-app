@@ -7,17 +7,46 @@ export default function Article3() {
   return (
 
     <>
-      
-<Helmet>
+   <Helmet>
   <title>Indian Youth Returning to Traditional Careers: A New Trend?</title>
-  <meta
-    name="description"
-    content="A surprising shift shows Indian youth choosing traditional careers like farming, crafts, and government jobs. Here's why."
+  <meta 
+    name="description" 
+    content="A surprising rise in youth choosing farming, carpentry, handloom, and traditional jobs again." 
   />
+
+  <link rel="canonical" href="https://www.localnewsindia.in/article/3" />
+
+  <meta property="og:type" content="article" />
   <meta property="og:title" content="Indian Youth Returning to Traditional Careers" />
-  <meta property="og:description" content="Young Indians are rediscovering traditional jobs—learn what is driving the shift." />
-  <meta property="og:image" content="/images/article3.png" />
+  <meta property="og:description" content="Why modern youth are going back to India’s heritage professions." />
+  <meta property="og:image" content="https://www.localnewsindia.in/traditional-careers.png" />
+  <meta property="og:url" content="https://www.localnewsindia.in/article/3" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Indian Youth Returning to Traditional Careers" />
+  <meta name="twitter:description" content="A cultural shift is bringing youth back to rural professions." />
+  <meta name="twitter:image" content="https://www.localnewsindia.in/traditional-careers.png" />
+
+  <script type="application/ld+json">
+  {`
+  {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    "headline": "Indian Youth Returning to Traditional Careers: A New Trend?",
+    "image": "https://www.localnewsindia.in/traditional-careers.png",
+    "datePublished": "2025-12-11",
+    "author": {"@type": "Organization", "name": "Local News India"},
+    "publisher": {
+      "@type": "Organization",
+      "name": "Local News India",
+      "logo": {"@type": "ImageObject", "url": "https://www.localnewsindia.in/localnews.png"}
+    },
+    "description": "Many young Indians are rediscovering traditional career paths across rural regions."
+  }
+  `}
+  </script>
 </Helmet>
+
 
   
     <div className="min-h-screen bg-white dark:bg-[#07101a] py-10">

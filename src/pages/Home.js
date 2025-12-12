@@ -48,6 +48,50 @@ export default function Home() {
 
   return (
     <>
+    <Helmet>
+        <title>Local News India – Latest Telugu, Tamil, Kannada, Malayalam & Hindi News</title>
+
+        <meta
+          name="description"
+          content="Local News India provides fast regional news updates in Telugu, Tamil, Kannada, Malayalam, and Hindi. Breaking news, top headlines, local updates, and trending stories — all in one place."
+        />
+
+        <link rel="canonical" href="https://www.localnewsindia.in/" />
+
+        {/* OG Tags */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Local News India – Latest Regional Updates" />
+        <meta
+          property="og:description"
+          content="Stay updated with regional news in 5 languages. Clean UI, fast loading, ad-friendly design."
+        />
+        <meta property="og:image" content="https://www.localnewsindia.in/localnews.png" />
+        <meta property="og:url" content="https://www.localnewsindia.in/" />
+
+        {/* Twitter Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Local News India – Latest Regional Updates" />
+        <meta
+          name="twitter:description"
+          content="Real-time Telugu, Tamil, Hindi, Malayalam & Kannada news updates."
+        />
+        <meta name="twitter:image" content="https://www.localnewsindia.in/localnews.png" />
+
+        {/* JSON-LD Structured Data */}
+        <script type="application/ld+json">
+          {`
+          {
+            "@context": "https://schema.org",
+            "@type": "NewsMediaOrganization",
+            "name": "Local News India",
+            "url": "https://www.localnewsindia.in",
+            "logo": "https://www.localnewsindia.in/localnews.png",
+            "description": "Regional news platform covering Telugu, Tamil, Kannada, Malayalam, and Hindi news.",
+            "sameAs": []
+          }
+          `}
+        </script>
+      </Helmet>
       <Navbar />
 
       <main className="pt-24 flex justify-center">

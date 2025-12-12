@@ -5,16 +5,46 @@ export default function Article3() {
   return (
        
     <>
-      <Helmet>
+       <Helmet>
   <title>AI Adoption Growing in Indian Villages: From Farming to Classrooms</title>
-  <meta
-    name="description"
-    content="AI tools are transforming rural India—from agriculture to education. Learn how villages are adopting new technology."
+  <meta 
+    name="description" 
+    content="AI tools are entering Indian villages, transforming farming, education, and rural development." 
   />
+
+  <link rel="canonical" href="https://www.localnewsindia.in/article/2" />
+
+  <meta property="og:type" content="article" />
   <meta property="og:title" content="AI Adoption Growing in Indian Villages" />
-  <meta property="og:description" content="How AI is helping Indian villages modernize agriculture, education, and governance." />
-  <meta property="og:image" content="/images/article2.png" />
+  <meta property="og:description" content="How AI is helping farmers, students, and rural industries progress faster." />
+  <meta property="og:image" content="https://www.localnewsindia.in/ai-village.png" />
+  <meta property="og:url" content="https://www.localnewsindia.in/article/2" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="AI Adoption Growing in Indian Villages" />
+  <meta name="twitter:description" content="AI is rapidly transforming India's rural landscape." />
+  <meta name="twitter:image" content="https://www.localnewsindia.in/ai-village.png" />
+
+  <script type="application/ld+json">
+  {`
+  {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    "headline": "AI Adoption Growing in Indian Villages: From Farming to Classrooms",
+    "image": "https://www.localnewsindia.in/ai-village.png",
+    "datePublished": "2025-12-10",
+    "author": {"@type": "Organization", "name": "Local News India"},
+    "publisher": {
+      "@type": "Organization",
+      "name": "Local News India",
+      "logo": {"@type": "ImageObject", "url": "https://www.localnewsindia.in/localnews.png"}
+    },
+    "description": "AI systems are being used in agriculture, education, and governance across Indian villages."
+  }
+  `}
+  </script>
 </Helmet>
+
    
     <div className="min-h-screen bg-white dark:bg-[#07101a] py-10">
       <div className="max-w-3xl mx-auto p-6 bg-white dark:bg-[#07101a] rounded-xl shadow">

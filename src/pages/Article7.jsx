@@ -7,17 +7,46 @@ export default function Article7() {
   return (
     <>
     
-
-<Helmet>
+    <Helmet>
   <title>How Indian Government Services Are Becoming Digital</title>
-  <meta
-    name="description"
-    content="DigiLocker, UPI, Aarogya Setu, CoWIN — India is rapidly moving government services online. Here's the impact."
+  <meta 
+    name="description" 
+    content="UPI, DigiLocker, Aarogya Setu and other digital services are transforming governance in India." 
   />
+
+  <link rel="canonical" href="https://www.localnewsindia.in/article/7" />
+
+  <meta property="og:type" content="article" />
   <meta property="og:title" content="India's Digital Government Services" />
-  <meta property="og:description" content="UPI, DigiLocker and more — how India is becoming digitally empowered." />
-  <meta property="og:image" content="/images/article7.png" />
+  <meta property="og:description" content="A deep look at India's rapid digital governance shift." />
+  <meta property="og:image" content="https://www.localnewsindia.in/digital-services.png" />
+  <meta property="og:url" content="https://www.localnewsindia.in/article/7" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="India's Digital Government Services" />
+  <meta name="twitter:description" content="Government services across India are becoming fully digital." />
+  <meta name="twitter:image" content="https://www.localnewsindia.in/digital-services.png" />
+
+  <script type="application/ld+json">
+  {`
+  {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    "headline": "How Indian Government Services Are Becoming Digital",
+    "image": "https://www.localnewsindia.in/digital-services.png",
+    "datePublished": "2025-12-15",
+    "author": {"@type": "Organization", "name": "Local News India"},
+    "publisher": {
+      "@type": "Organization",
+      "name": "Local News India",
+      "logo": {"@type": "ImageObject", "url": "https://www.localnewsindia.in/localnews.png"}
+    },
+    "description": "Govt services like UPI, DigiLocker and more are becoming digital nationwide."
+  }
+  `}
+  </script>
 </Helmet>
+
 
     <div className="min-h-screen bg-gray-50 dark:bg-[#07101a] py-10 px-4">
 

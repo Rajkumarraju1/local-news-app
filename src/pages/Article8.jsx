@@ -6,17 +6,46 @@ export default function Article8() {
   return (
     <>
    
-
-<Helmet>
-  <title>India's Renewable Energy Growth: Solar & Wind Power Adoption</title>
-  <meta
-    name="description"
-    content="India is rapidly adopting solar and wind energy, becoming a global leader in clean energy expansion."
+ <Helmet>
+  <title>India's Renewable Energy Push: Solar and Wind Power Surge</title>
+  <meta 
+    name="description" 
+    content="India is massively expanding solar, wind and green energy projects for a sustainable future." 
   />
-  <meta property="og:title" content="India's Renewable Energy Growth" />
-  <meta property="og:description" content="How India is expanding solar and wind energy in rural & urban areas." />
-  <meta property="og:image" content="/images/article8.png" />
+
+  <link rel="canonical" href="https://www.localnewsindia.in/article/8" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="India's Renewable Energy Push" />
+  <meta property="og:description" content="Solar and wind energy adoption is rapidly increasing across India." />
+  <meta property="og:image" content="https://www.localnewsindia.in/renewable-energy.png" />
+  <meta property="og:url" content="https://www.localnewsindia.in/article/8" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="India's Renewable Energy Push" />
+  <meta name="twitter:description" content="India's green energy transformation is accelerating fast." />
+  <meta name="twitter:image" content="https://www.localnewsindia.in/renewable-energy.png" />
+
+  <script type="application/ld+json">
+  {`
+  {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    "headline": "India's Renewable Energy Push: Solar and Wind Power Surge",
+    "image": "https://www.localnewsindia.in/renewable-energy.png",
+    "datePublished": "2025-12-16",
+    "author": {"@type": "Organization", "name": "Local News India"},
+    "publisher": {
+      "@type": "Organization",
+      "name": "Local News India",
+      "logo": {"@type": "ImageObject", "url": "https://www.localnewsindia.in/localnews.png"}
+    },
+    "description": "India is rapidly adopting renewable energy technologies to reduce carbon footprint."
+  }
+  `}
+  </script>
 </Helmet>
+
 
     <div className="min-h-screen bg-gray-50 dark:bg-[#07101a] py-10 px-4">
       <div className="max-w-3xl mx-auto p-6 bg-white dark:bg-[#0c1624] rounded-xl shadow-lg">
