@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
+
 import { Link } from "react-router-dom";   // ⭐ REQUIRED
 import Navbar from "../components/Navbar";
 import CategoryTabs from "../components/CategoryTabs";
