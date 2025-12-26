@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
-
-import { Link } from "react-router-dom";   // ⭐ REQUIRED
+import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import CategoryTabs from "../components/CategoryTabs";
 import NewsCard from "../components/NewsCard";
@@ -10,12 +9,15 @@ import Footer from "../components/Footer";
 import AdSidebar from "../components/ads/AdSidebar";
 import AdInline from "../components/ads/AdInline";
 import BackToTop from "../components/BackToTop";
+import { articles } from "../data/articlesData";
+import BreakingTicker from "../components/BreakingTicker";
 
 const newsCache = {};
 
 export default function Home() {
   const [category, setCategory] = useState("Telugu");
   const [news, setNews] = useState([]);
+  const [heroArticle, setHeroArticle] = useState(null);
 
   const langMap = {
     Telugu: "te",
@@ -26,6 +28,11 @@ export default function Home() {
   };
 
   useEffect(() => {
+    // 1. Pick a random "Breaking News" article on mount
+    const random = articles[Math.floor(Math.random() * articles.length)];
+    setHeroArticle(random);
+
+    // 2. Fetch API News
     async function loadNews() {
       const lang = langMap[category];
       if (newsCache[lang]) {
@@ -34,7 +41,6 @@ export default function Home() {
       }
 
       setNews([]);
-
       const data = await fetchNews(lang);
       if (!Array.isArray(data)) {
         setNews([]);
@@ -48,9 +54,14 @@ export default function Home() {
     loadNews();
   }, [category]);
 
+  // Filter out the hero article so it doesn't show up in sidebars
+  const otherArticles = heroArticle
+    ? articles.filter(a => a.id !== heroArticle.id)
+    : articles;
+
   return (
     <>
-    <Helmet>
+      <Helmet>
         <title>Local News India – Latest Telugu, Tamil, Kannada, Malayalam & Hindi News</title>
 
         <meta
@@ -96,58 +107,67 @@ export default function Home() {
       </Helmet>
       <Navbar />
 
-      <main className="pt-24 flex justify-center">
-        <div className="w-full max-w-6xl px-4">
+      <div className="pt-20">
+        <BreakingTicker news={news} />
+      </div>
+
+      <main className="pt-4 flex justify-center">
+        <div className="w-full max-w-[1400px] px-4">
+
+
 
           <CategoryTabs current={category} onChange={setCategory} />
 
-          {/* ⭐⭐⭐ FEATURED ARTICLES SECTION — ADD HERE ⭐⭐⭐ */}
-          <div className="max-w-5xl mx-auto mt-10 p-6 bg-white dark:bg-[#0c1624] rounded-xl shadow-lg">
-            <h2 className="text-2xl font-bold mb-4">Featured Articles</h2>
-
-            <div className="grid md:grid-cols-2 gap-4">
-              <Link to="/article/1" className="hover:text-blue-600 font-semibold">
-                📌 Rising Interest in Local Digital News Platforms
+          {/* HERO SECTION — PROFESSIONAL TOP STORY */}
+          {heroArticle && (
+            <div className="mb-10 w-full relative group overflow-hidden rounded-2xl shadow-xl">
+              <Link to={`/article/${heroArticle.id}`} className="block relative h-[450px]">
+                <img
+                  src={heroArticle.image}
+                  alt={heroArticle.title}
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-8">
+                  <span className="inline-block px-3 py-1 bg-red-600 text-white text-xs font-bold uppercase tracking-wider mb-3 w-fit rounded-sm">
+                    Breaking News
+                  </span>
+                  <h2 className="text-3xl md:text-5xl font-bold text-white font-serif leading-tight drop-shadow-md">
+                    {heroArticle.title}
+                  </h2>
+                  <p className="text-gray-200 mt-2 line-clamp-2 max-w-2xl text-lg hidden md:block">
+                    {heroArticle.description}
+                  </p>
+                </div>
               </Link>
-
-              <Link to="/article/2" className="hover:text-blue-600 font-semibold">
-                📌 AI Adoption Growing in Indian Villages
-              </Link>
-
-              <Link to="/article/3" className="hover:text-blue-600 font-semibold">
-                📌 Indian Youth Returning to Traditional Careers
-              </Link>
-
-              <Link to="/article/4" className="hover:text-blue-600 font-semibold">
-                📌 Digital Payments Expansion in Rural India
-              </Link>
-
-              <Link to="/article/5" className="hover:text-blue-600 font-semibold">
-                📌 Rise of Regional OTT Platforms in India
-              </Link>
-              <Link to="/article/6" className="hover:text-blue-600 font-semibold">
-                📌 Growth of Local Tourism in India: Small Places Getting Big Attention
-             </Link>
-
-            <Link to="/article/7" className="hover:text-blue-600 font-semibold">
-               📌 How Indian Government Services Are Becoming Digital (UPI, DigiLocker, etc.)
-            </Link>
-
-            <Link to="/article/8" className="hover:text-blue-600 font-semibold">
-              📌 India’s Renewable Energy Push: Solar & Wind Power Growth
-            </Link>
             </div>
-          </div>
-          {/* ⭐⭐⭐ END FEATURED ARTICLES ⭐⭐⭐ */}
-
+          )}
 
           {/* MAIN GRID */}
-          <div className="grid grid-cols-12 gap-6 mt-6">
+          <div className="grid grid-cols-12 gap-8">
 
-            <aside className="hidden lg:block col-span-2">
+            {/* LEFT SIDEBAR - STICKY */}
+            <aside className="hidden lg:block col-span-2 space-y-6 sticky top-24 h-fit">
+              <div className="bg-white dark:bg-[#0c1624] p-4 rounded-xl shadow-md border dark:border-gray-800">
+                <h3 className="font-bold text-lg mb-4 border-b pb-2 dark:border-gray-700 font-serif text-red-600">Must Read</h3>
+                <div className="flex flex-col gap-4">
+                  {otherArticles.slice(0, 5).map((article) => (
+                    <Link
+                      key={article.id}
+                      to={`/article/${article.id}`}
+                      className="group"
+                    >
+                      <h4 className="text-sm font-semibold text-gray-800 dark:text-gray-200 group-hover:text-blue-600 leading-snug font-serif">
+                        {article.title}
+                      </h4>
+                      <p className="text-xs text-gray-500 mt-1">{article.date}</p>
+                    </Link>
+                  ))}
+                </div>
+              </div>
               <AdSidebar />
             </aside>
 
+            {/* MAIN NEWS FEED (Center) */}
             <section className="col-span-12 lg:col-span-8">
               {news.length === 0 ? (
                 <div className="space-y-6">
@@ -160,16 +180,43 @@ export default function Home() {
                   ))}
                 </div>
               ) : (
-                news.map((article, index) => (
-                  <div key={index}>
-                    <NewsCard article={article} />
-                    {(index + 1) % 4 === 0 && <AdInline />}
-                  </div>
-                ))
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  {news.map((article, index) => (
+                    <div key={index} className={index % 5 === 0 ? "col-span-1 md:col-span-2" : "col-span-1"}>
+                      <NewsCard article={article} featured={index % 5 === 0} />
+                      {(index + 1) % 4 === 0 && (
+                        <div className="col-span-1 md:col-span-2 mt-4">
+                          <AdInline />
+                        </div>
+                      )}
+                    </div>
+                  ))}
+                </div>
               )}
             </section>
 
-            <aside className="hidden lg:block col-span-2">
+            {/* RIGHT SIDEBAR - STICKY */}
+            <aside className="hidden lg:block col-span-2 space-y-6 sticky top-24 h-fit">
+              <div className="bg-white dark:bg-[#0c1624] p-4 rounded-xl shadow-md border dark:border-gray-800">
+                <h3 className="font-bold text-lg mb-4 border-b pb-2 dark:border-gray-700 font-serif text-blue-600">Trending</h3>
+                <div className="flex flex-col gap-4">
+                  {otherArticles.slice(5).map((article) => (
+                    <Link
+                      key={article.id}
+                      to={`/article/${article.id}`}
+                      className="group"
+                    >
+                      <h4 className="text-sm font-semibold text-gray-800 dark:text-gray-200 group-hover:text-blue-600 leading-snug font-serif">
+                        {article.title}
+                      </h4>
+                      <div className="flex items-center gap-2 mt-1">
+                        <span className="text-xs text-red-500 font-bold">Live</span>
+                        <p className="text-xs text-gray-500">{article.date}</p>
+                      </div>
+                    </Link>
+                  ))}
+                </div>
+              </div>
               <AdSidebar />
             </aside>
 

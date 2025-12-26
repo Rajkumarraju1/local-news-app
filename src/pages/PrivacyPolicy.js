@@ -1,49 +1,54 @@
 export default function PrivacyPolicy() {
   return (
-    <div className="p-6 text-white max-w-3xl mx-auto space-y-4 glass-card mt-24">
+    <div className="p-8 text-white max-w-4xl mx-auto space-y-6 glass-card mt-24 leading-relaxed">
 
-      <h1 className="text-3xl font-bold mb-4">Privacy Policy</h1>
+      <h1 className="text-4xl font-bold mb-6 border-b border-gray-700 pb-4">Privacy Policy</h1>
 
-      <p>
-        Local News ("we", "our", "us") operates this website to provide news content aggregated from various third-party sources. This Privacy Policy explains how we handle information when you use our website.
+      <p className="text-lg">
+        Local News India ("we", "our", "us") values your privacy. This Privacy Policy outlines how we collect, use, and protect your information when you access our platform.
+        By using our website, you agree to the collection and use of information in accordance with this policy.
       </p>
 
-      <h2 className="text-xl font-semibold">Information We Collect</h2>
-      <p>
-        We do not collect personal data such as your name, email, or phone number. 
-        However, non-personal data such as device type, browser, and general location 
-        may be collected by analytics or advertising services.
-      </p>
+      <section>
+        <h2 className="text-2xl font-semibold mb-2 text-blue-400">1. Information Collection</h2>
+        <p className="text-gray-300">
+          We do NOT collect personally identifiable information (PII) like your name, address, or phone number explicitly.
+          However, standard non-personal data (Log Data) such as your browser type, device info, IP address, and pages visited may be collected for analytics and security purposes.
+        </p>
+      </section>
 
-      <h2 className="text-xl font-semibold">Third-Party Services</h2>
-      <p>
-        We use third-party APIs (NewsData.io) to fetch news content.  
-        Advertisements may be displayed using Google AdSense, which may use cookies to personalize ads.
-      </p>
+      <section>
+        <h2 className="text-2xl font-semibold mb-2 text-blue-400">2. Cookies and Advertising</h2>
+        <p className="text-gray-300 mb-2">
+          We use <strong>Google AdSense</strong> to display advertisements. AdSense uses cookies to serve ads based on your prior visits to our website or other websites.
+        </p>
+        <ul className="list-disc list-inside text-gray-300 space-y-1 ml-4">
+          <li>Google allows the use of the <strong>DoubleClick DART cookie</strong> to serve ads to users based on their visit to our sites and other sites on the Internet.</li>
+          <li>Users may opt-out of the use of the DART cookie by visiting the <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noreferrer" className="text-blue-300 underline">Google Ad and Content Network Privacy Policy</a>.</li>
+        </ul>
+      </section>
 
-      <h2 className="text-xl font-semibold">External Links</h2>
-      <p>
-        Our website displays links to external news websites.  
-        We are not responsible for the content, privacy practices, or policies of these websites.
-      </p>
+      <section>
+        <h2 className="text-2xl font-semibold mb-2 text-blue-400">3. Third-Party Services</h2>
+        <p className="text-gray-300">
+          We aggregate news from <strong>NewsData.io</strong>. By using our service, you acknowledge that content is sourced from third parties. We are not responsible for the privacy practices of external sites you may visit via our links.
+        </p>
+      </section>
 
-      <h2 className="text-xl font-semibold">Cookies</h2>
-      <p>
-        Cookies may be used to improve user experience and display personalized ads.  
-        You can disable cookies in your browser settings.
-      </p>
+      <section>
+        <h2 className="text-2xl font-semibold mb-2 text-blue-400">4. Your Rights (GDPR & CCPA)</h2>
+        <p className="text-gray-300">
+          Depending on your location, you may have rights regarding your data (e.g., the right to opt-out of personalized ads). We respect these rights and provide mechanisms via our Consent Management Platform (if applicable) or browser settings to control your preferences.
+        </p>
+      </section>
 
-      <h2 className="text-xl font-semibold">Changes to This Policy</h2>
-      <p>
-        We may update this Privacy Policy at any time.  
-        Continued use of the website signifies acceptance of the updated policy.
-      </p>
-
-      <h2 className="text-xl font-semibold">Contact Us</h2>
-      <p>
-        If you have any questions, you may contact us at:  
-        <strong>localnewsappin@gmail.com</strong>
-      </p>
+      <section className="mt-8 pt-6 border-t border-gray-700">
+        <h2 className="text-xl font-semibold mb-2">Contact Us</h2>
+        <p className="text-gray-400">
+          If you have questions about this policy, please contact us at: <br />
+          <strong className="text-white">privacy@localnewsindia.in</strong>
+        </p>
+      </section>
 
     </div>
   );

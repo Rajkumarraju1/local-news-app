@@ -15,11 +15,8 @@ export default function Navbar() {
         <Link to="/" className="flex items-center gap-3">
           <img
             src="/localnews.png"
-            className="w-9 h-9 block dark:hidden rounded-sm"
-          />
-          <img
-            src="/localnews-white.png"
-            className="w-9 h-9 hidden dark:block rounded-sm"
+            alt="Local News"
+            className="w-9 h-9 rounded-sm dark:invert"
           />
 
           <div>
