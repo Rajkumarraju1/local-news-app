@@ -607,4 +607,422 @@ export const articles = [
             </>
         ),
     },
+    },
+    {
+        id: 11,
+        title: "Reviving Ancient Water Systems: How Telangana’s Stepwells Are Breathing Again",
+        date: "16 December 2025",
+        author: "Local News India Desk",
+        image: tourism,
+        description: "A look into the restoration of historic stepwells in Telangana, blending heritage conservation with water management.",
+        content: (
+            <>
+                <p>
+                    Nestled amidst the urbanization of Hyderabad and surrounding districts lie centuries-old
+                    <strong>stepwells (Baolis)</strong>. Once the lifeline of the region’s water supply, many were
+                    lost to garbage and neglect. However, a massive restoration movement is bringing them back to life.
+                </p>
+
+                <h2>The Historical Significance</h2>
+                <p>
+                    Built during the Qutb Shahi and Asaf Jahi eras, these stepwells were engineering marvels designed
+                    to harvest rainwater and provide cool resting spots for travelers.
+                </p>
+
+                <h2>Restoration Efforts & Impact</h2>
+                <ul>
+                    <li><strong>Bansilalpet Stepwell:</strong> Once a dump yard, now a thriving cultural spot.</li>
+                    <li><strong>Water Table Recharge:</strong> Restored wells are helping replenish groundwater levels.</li>
+                    <li><strong>Community Engagement:</strong> Locals are now involved in maintaining these heritage sites.</li>
+                </ul>
+
+                <p>
+                    The initiative proves that preserving heritage is not just about aesthetics—it's about sustainable
+                    living for the future.
+                </p>
+            </>
+        ),
+    },
+    {
+        id: 12,
+        title: "Silent Weavers of Sircilla: The Struggle and Success of Modern Handloom",
+        date: "17 December 2025",
+        author: "Local News India Desk",
+        image: news,
+        description: "How technology and government support are reshaping the lives of weavers in the textile town of Sircilla.",
+        content: (
+            <>
+                <p>
+                    Sircilla, often called the 'Textile Town' of Telangana, has seen its share of highs and lows.
+                    From a crisis-ridden past, the town is emerging as a hub of modern fabric production, thanks to
+                    resilient weavers and policy interventions.
+                </p>
+
+                <h2>Transition to Power Looms</h2>
+                <p>
+                    Traditional handlooms have largely given way to modern power looms, increasing efficiency.
+                    Government schemes like <strong>Bathukamma Sarees</strong> orders have provided steady income.
+                </p>
+
+                <h2>Challenges Remaining</h2>
+                <p>
+                    Despite progress, rising raw material costs and competition from mass-manufactured synthetics remain
+                    hurdles. However, the younger generation is leveraging e-commerce to sell directly to global buyers.
+                </p>
+            </>
+        ),
+    },
+    {
+        id: 13,
+        title: "Millet Revolution: Andhra & Karnataka Leading the Superfood Charge",
+        date: "18 December 2025",
+        author: "Local News India Desk",
+        image: clean,
+        description: "Millets are back on the plate. Explore how farmers in South India are championing this healthy, drought-resistant crop.",
+        content: (
+            <>
+                <p>
+                    Once considered 'poor man’s food', millets are now celebrated globally as a superfood.
+                    Farmers in Andhra Pradesh and Karnataka are at the forefront of this agricultural shift.
+                </p>
+
+                <h2>Why Millets?</h2>
+                <ul>
+                    <li><strong>Drought Resistant:</strong> Requires very little water compared to rice.</li>
+                    <li><strong>Nutritional Powerhouse:</strong> Rich in protein, fiber, and iron.</li>
+                    <li><strong>Economic Viability:</strong> Lower input costs for farmers.</li>
+                </ul>
+
+                <p>
+                    With the UN declaring 2023 as the International Year of Millets, exports have surged,
+                    giving rural farmers a much-needed income boost.
+                </p>
+            </>
+        ),
+    },
+    {
+        id: 14,
+        title: "Tech in the Tiffin Box: How Cloud Kitchens Are Changing Urban Eating Habits",
+        date: "19 December 2025",
+        author: "Local News India Desk",
+        image: digi,
+        description: "The rise of delivery-only restaurants in Tier-2 cities is changing how India eats.",
+        content: (
+            <>
+                <p>
+                    Gone are the days when 'eating out' meant visiting a restaurant. In cities like Vizag,
+                    Mysore, and Kochi, <strong>Cloud Kitchens</strong> are dominating the food scene.
+                </p>
+
+                <h2>What Drives the Boom?</h2>
+                <p>
+                    Low real estate costs and the high penetration of food delivery apps like Swiggy and Zomato
+                    make cloud kitchens a profitable venture for small entrepreneurs.
+                </p>
+
+                <p>
+                    "I started my biryani business from a 100 sq. ft. kitchen. Today, I serve 500 orders a day without
+                    owning a single table," says a cloud kitchen owner from Vijayawada.
+                </p>
+            </>
+        ),
+    },
+    {
+        id: 15,
+        title: "Kerala’s Responsible Tourism: A Model for the World",
+        date: "20 December 2025",
+        author: "Local News India Desk",
+        image: tourism,
+        description: "Kumarakom and beyond: How Kerala’s community-driven tourism benefits both locals and travelers.",
+        content: (
+            <>
+                <p>
+                    Kerala’s <strong>Responsible Tourism (RT) Mission</strong> has become a global case study.
+                    Instead of displacing locals for resorts, the model integrates them into the tourism economy.
+                </p>
+
+                <h2>Key Features</h2>
+                <ul>
+                    <li><strong>Village Life Experiences:</strong> Tourists can try net fishing, coir making, and toddy tapping.</li>
+                    <li><strong>Women Empowerment:</strong> Local women groups manage homestays and souvenir units.</li>
+                    <li><strong>Eco-Friendly Practices:</strong> Strict plastic bans in backwater zones.</li>
+                </ul>
+
+                <p>
+                    This sustainable approach ensures that tourism money flows directly into the pockets of the villagers.
+                </p>
+            </>
+        ),
+    },
+    {
+        id: 16,
+        title: "The UPI Effect: How Digital Payments Empowered Street Vendors",
+        date: "21 December 2025",
+        author: "Local News India Desk",
+        image: digi,
+        description: "From vegetable carts to tea stalls, the QR code has revolutionized daily commerce in India.",
+        content: (
+            <>
+                <p>
+                    The familiar sound of "Payment Received" from a soundbox is now the soundtrack of Indian streets.
+                    For street vendors, the Unified Payments Interface (UPI) has been a game-changer.
+                </p>
+
+                <h2>Solving the 'Change' Problem</h2>
+                <p>
+                    "Earlier, I moved 10 customers a day because I didn't have change for ₹500 notes. Now,
+                    everyone scans and pays the exact amount," says Ramesh, a fruit vendor in Bengaluru.
+                </p>
+
+                <h2>Financial Inclusion</h2>
+                <p>
+                    With digital transaction history, vendors can now apply for micro-loans (PM SVANidhi),
+                    breaking free from the clutches of local moneylenders.
+                </p>
+            </>
+        ),
+    },
+    {
+        id: 17,
+        title: "Electric Auto-Rickshaws: The Green Transition of Indian Roads",
+        date: "22 December 2025",
+        author: "Local News India Desk",
+        image: electric,
+        description: "E-rickshaws are silently taking over Indian roads, offering cheaper and cleaner rides.",
+        content: (
+            <>
+                <p>
+                    In smaller towns like Warangal and Salem, the noisy diesel auto is rapidly being replaced
+                    by the silent <strong>E-Rickshaw</strong>.
+                </p>
+
+                <h2>Why the Switch?</h2>
+                <ul>
+                    <li><strong>Cost Efficiency:</strong> Running costs are a fraction of diesel autos.</li>
+                    <li><strong>Low Maintenance:</strong> Fewer moving parts mean fewer repairs.</li>
+                    <li><strong>Driver Comfort:</strong> No gear shifts and less vibration reduce driver fatigue.</li>
+                </ul>
+
+                <p>
+                    While charging infrastructure is still catching up, the economic benefits for drivers are undeniable.
+                </p>
+            </>
+        ),
+    },
+    {
+        id: 18,
+        title: "Reviving Sanskrit: How Mattur Village Speak the Ancient Language",
+        date: "23 December 2025",
+        author: "Local News India Desk",
+        image: youth,
+        description: "In Karnataka's Mattur village, Sanskrit is not a dead language—it's the daily vernacular.",
+        content: (
+            <>
+                <p>
+                    Mattur, a quaint village in Karnataka, holds a unique distinction. Here, shopkeepers, farmers,
+                    and children converse fluently in <strong>Sanskrit</strong>.
+                </p>
+
+                <h2>Preserving Heritage</h2>
+                <p>
+                    The tradition began in the 1980s to preserve the language. Today, it attracts scholars
+                    and tourists worldwide. The village proves that ancient traditions can coexist with modern life.
+                </p>
+
+                <p>
+                    "Sanskrit is the root of many Indian languages. Speaking it connects us to our deeper culture,"
+                    says a local school teacher.
+                </p>
+            </>
+        ),
+    },
+    {
+        id: 19,
+        title: "Women in STEM: The Rising Stars of India’s Space Missions",
+        date: "24 December 2025",
+        author: "Local News India Desk",
+        image: AI,
+        description: "Celebrating the crucial role of women scientists in ISRO’s recent successes like Chandrayaan.",
+        content: (
+            <>
+                <p>
+                    When Chandrayaan-3 landed on the moon, the images of sari-clad women scientists celebrating
+                    went viral. This moment highlighted the pivotal role women play in India’s space journey.
+                </p>
+
+                <h2>Breaking Stereotypes</h2>
+                <p>
+                    From project directors to navigation experts, women at ISRO are leading critical missions.
+                    Their success is inspiring a new generation of girls in rural India to pursue STEM education.
+                </p>
+
+                <p>
+                    "Rocket science is no longer a 'man's job'. Ability sees no gender," remarks a senior ISRO scientist.
+                </p>
+            </>
+        ),
+    },
+    {
+        id: 20,
+        title: "Bengaluru’s Garden City Tag: Can It Be Saved?",
+        date: "25 December 2025",
+        author: "Local News India Desk",
+        image: clean,
+        description: "Urbanization threatens Bengaluru's green cover. Can citizen movements restore its glory?",
+        content: (
+            <>
+                <p>
+                    Once known for its cool climate and lush parks, Bengaluru is facing a heat island effect due to
+                    rapid concreting. However, citizen groups are fighting back.
+                </p>
+
+                <h2>Citizen Apathy to Action</h2>
+                <p>
+                    Movements like 'Save Cubbon Park' and lake restoration drives initiated by residents are making
+                    a difference.
+                </p>
+
+                <ul>
+                    <li><strong>Seedball bombing:</strong> Weekend drives to plant trees in barren lands.</li>
+                    <li><strong>Lake rejuvenation:</strong> Communities adopting and cleaning local lakes.</li>
+                </ul>
+
+                <p>
+                    The battle for Bengaluru's soul is on, and its citizens are its strongest soldiers.
+                </p>
+            </>
+        ),
+    },
+    {
+        id: 21,
+        title: "Tamil Nadu’s Temple Tanks: Ancient Engineering for Modern Water Crisis",
+        date: "26 December 2025",
+        author: "Local News India Desk",
+        image: tourism,
+        description: "How ancient temple tanks (Teppakulam) serve as vital rainwater harvesting structures today.",
+        content: (
+            <>
+                <p>
+                    Every major temple in Tamil Nadu is accompanied by a massive tank. While religiously significant,
+                    their primary purpose was <strong>water management</strong>.
+                </p>
+
+                <h2>The Science Behind the Faith</h2>
+                <p>
+                    These tanks collect rainwater during monsoons, preventing floods and recharging the surrounding
+                    groundwater aquifers. In drought-prone regions like Madurai and Ramanathapuram, they are lifelines.
+                </p>
+
+                <p>
+                    "Reviving these tanks is cheaper and more effective than building new dams," notes a water conservationist.
+                </p>
+            </>
+        ),
+    },
+    {
+        id: 22,
+        title: "Co-Working Spaces in Tier-3 Towns: The Remote Work Shift",
+        date: "27 December 2025",
+        author: "Local News India Desk",
+        image: news,
+        description: "Why techies are moving back to towns like Shimoga and Tirupati, fueling a co-working boom.",
+        content: (
+            <>
+                <p>
+                    Remote work is no longer just a metro phenomenon. Co-working spaces are popping up in towns
+                    like Shimoga, Tirupati, and Nashik, catering to IT professionals who returned home.
+                </p>
+
+                <h2>Benefits of Small Town Work</h2>
+                <ul>
+                    <li><strong>Zero Commute:</strong> Saving 2-3 hours daily.</li>
+                    <li><strong>Low Cost of Living:</strong> Saving up to 60% of salary.</li>
+                    <li><strong>Better Quality of Life:</strong> Cleaner air and fresher food.</li>
+                </ul>
+
+                <p>
+                    This trend is decentralizing the IT economy, spreading wealth beyond the big tech hubs.
+                </p>
+            </>
+        ),
+    },
+    {
+        id: 23,
+        title: "The Comeback of Khadi: From Freedom Struggle to Fashion Statement",
+        date: "28 December 2025",
+        author: "Local News India Desk",
+        image: tred,
+        description: "Khadi is shedding its 'politician's fabric' image to become a sustainable fashion trend.",
+        content: (
+            <>
+                <p>
+                    Designer brands are reimagining Khadi—the hand-spun fabric of India's freedom struggle.
+                    It is now hitting ramps as a sustainable, breathable, and chic fabric.
+                </p>
+
+                <h2>Why Khadi Now?</h2>
+                <p>
+                    In a world worried about fast fashion's carbon footprint, Khadi is the ultimate eco-friendly fabric.
+                    It has zero carbon emissions and empowers rural artisans.
+                </p>
+
+                <p>
+                    "Wearing Khadi is no longer just patriotism; it's a style statement," says a young fashion designer from Delhi.
+                </p>
+            </>
+        ),
+    },
+    {
+        id: 24,
+        title: "Drones in Indian Agriculture: The Sky is the Limit",
+        date: "29 December 2025",
+        author: "Local News India Desk",
+        image: AI,
+        description: "Kisan Drones are spraying pesticides and mapping lands, modernizing Indian farming.",
+        content: (
+            <>
+                <p>
+                    Imagine a farmer spraying an acre of land in 10 minutes instead of a whole day.
+                    <strong>Kisan Drones</strong> are making this a reality.
+                </p>
+
+                <h2>Applications</h2>
+                <ul>
+                    <li><strong>Precision Spraying:</strong> Reduces chemical usage by 30%.</li>
+                    <li><strong>Crop Health Monitoring:</strong> Multispectral cameras detect early signs of disease.</li>
+                    <li><strong>Land Surveying:</strong> Accurate digital records of land ownership.</li>
+                </ul>
+
+                <p>
+                    Subsidised by the government, these drones are helping farmers save time, money, and health.
+                </p>
+            </>
+        ),
+    },
+    {
+        id: 25,
+        title: "Street Art in India: Painting Stories on Public Walls",
+        date: "30 December 2025",
+        author: "Local News India Desk",
+        image: youth,
+        description: "From Delhi's Lodhi Colony to Chennai's Kannagi Nagar, street art districts are flourishing.",
+        content: (
+            <>
+                <p>
+                    Public walls in India, once covered in movie posters, are turning into canvases. Street art foundations
+                    are transforming slums and public buildings into open-air art galleries.
+                </p>
+
+                <h2>Kannagi Nagar: India’s First Art District</h2>
+                <p>
+                    In Chennai, a resettlement colony has been transformed with massive murals depicting local life.
+                    It has changed the perception of the area and instilled pride in residents.
+                </p>
+
+                <p>
+                    Art is proving to be a powerful tool for urban regeneration and storytelling.
+                </p>
+            </>
+        ),
+    },
 ];
