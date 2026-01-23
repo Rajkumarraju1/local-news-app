@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HelmetProvider } from "react-helmet-async";
 
 import Home from "./pages/Home";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
@@ -25,9 +26,11 @@ function Particles() {
   );
 }
 
+
+
 function App() {
   return (
-    <>
+    <HelmetProvider>
       <Particles />
       <Router>
         <Routes>
@@ -41,7 +44,7 @@ function App() {
           <Route path="/article/:id" element={<ArticlePage />} />
         </Routes>
       </Router>
-    </>
+    </HelmetProvider>
   );
 }
 
