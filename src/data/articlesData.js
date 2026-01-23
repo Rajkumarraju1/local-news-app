@@ -607,7 +607,7 @@ export const articles = [
             </>
         ),
     },
-    },
+
     {
         id: 11,
         title: "Reviving Ancient Water Systems: How Telangana’s Stepwells Are Breathing Again",
