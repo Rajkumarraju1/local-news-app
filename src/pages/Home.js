@@ -14,18 +14,20 @@ import BreakingTicker from "../components/BreakingTicker";
 
 const newsCache = {};
 
+const langMap = {
+  Telugu: "te",
+  Tamil: "ta",
+  Kannada: "kn",
+  Malayalam: "ml",
+  Hindi: "hi",
+};
+
 export default function Home() {
   const [category, setCategory] = useState("Telugu");
   const [news, setNews] = useState([]);
   const [heroArticle, setHeroArticle] = useState(null);
 
-  const langMap = {
-    Telugu: "te",
-    Tamil: "ta",
-    Kannada: "kn",
-    Malayalam: "ml",
-    Hindi: "hi",
-  };
+
 
   useEffect(() => {
     // 1. Pick a random "Breaking News" article on mount
