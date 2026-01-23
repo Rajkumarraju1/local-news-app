@@ -1,5 +1,5 @@
 
-import { useEffect, useState } from "react";
+
 
 export default function BreakingTicker({ news }) {
     // If no news, show default static messages
