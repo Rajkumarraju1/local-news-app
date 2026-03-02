@@ -1,52 +1,147 @@
+import React from 'react';
+
 export default function PrivacyPolicy() {
   return (
-    <div className="p-8 text-white max-w-4xl mx-auto space-y-6 glass-card mt-24 leading-relaxed">
+    <div className="p-8 text-white max-w-4xl mx-auto space-y-8 glass-card mt-24 leading-relaxed">
 
       <h1 className="text-4xl font-bold mb-6 border-b border-gray-700 pb-4">Privacy Policy</h1>
 
+      <p className="text-gray-300">Last updated: March 02, 2026</p>
+
       <p className="text-lg">
-        Local News India ("we", "our", "us") values your privacy. This Privacy Policy outlines how we collect, use, and protect your information when you access our platform.
-        By using our website, you agree to the collection and use of information in accordance with this policy.
+        At Local News India ("we", "our", "us"), accessible from https://www.localnewsindia.in, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Local News India and how we use it.
+      </p>
+
+      <p className="text-lg">
+        If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us.
+      </p>
+
+      <p className="text-lg">
+        This Privacy Policy applies only to our online activities and is valid for visitors to our website with regards to the information that they shared and/or collect in Local News India. This policy is not applicable to any information collected offline or via channels other than this website.
       </p>
 
       <section>
-        <h2 className="text-2xl font-semibold mb-2 text-blue-400">1. Information Collection</h2>
+        <h2 className="text-2xl font-semibold mb-3 text-blue-400">1. Consent</h2>
         <p className="text-gray-300">
-          We do NOT collect personally identifiable information (PII) like your name, address, or phone number explicitly.
-          However, standard non-personal data (Log Data) such as your browser type, device info, IP address, and pages visited may be collected for analytics and security purposes.
+          By using our website, you hereby consent to our Privacy Policy and agree to its terms.
         </p>
       </section>
 
       <section>
-        <h2 className="text-2xl font-semibold mb-2 text-blue-400">2. Cookies and Advertising</h2>
-        <p className="text-gray-300 mb-2">
-          We use <strong>Google AdSense</strong> to display advertisements. AdSense uses cookies to serve ads based on your prior visits to our website or other websites.
+        <h2 className="text-2xl font-semibold mb-3 text-blue-400">2. Information we collect</h2>
+        <p className="text-gray-300 mb-3">
+          The personal information that you are asked to provide, and the reasons why you are asked to provide it, will be made clear to you at the point we ask you to provide your personal information.
         </p>
+        <p className="text-gray-300 mb-3">
+          If you contact us directly, we may receive additional information about you such as your name, email address, phone number, the contents of the message and/or attachments you may send us, and any other information you may choose to provide.
+        </p>
+        <p className="text-gray-300">
+          When you register for an Account, we may ask for your contact information, including items such as name, company name, address, email address, and telephone number.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-semibold mb-3 text-blue-400">3. How we use your information</h2>
+        <p className="text-gray-300 mb-2">We use the information we collect in various ways, including to:</p>
         <ul className="list-disc list-inside text-gray-300 space-y-1 ml-4">
-          <li>Google allows the use of the <strong>DoubleClick DART cookie</strong> to serve ads to users based on their visit to our sites and other sites on the Internet.</li>
-          <li>Users may opt-out of the use of the DART cookie by visiting the <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noreferrer" className="text-blue-300 underline">Google Ad and Content Network Privacy Policy</a>.</li>
+          <li>Provide, operate, and maintain our website</li>
+          <li>Improve, personalize, and expand our website</li>
+          <li>Understand and analyze how you use our website</li>
+          <li>Develop new products, services, features, and functionality</li>
+          <li>Communicate with you, either directly or through one of our partners, including for customer service, to provide you with updates and other information relating to the website, and for marketing and promotional purposes</li>
+          <li>Send you emails</li>
+          <li>Find and prevent fraud</li>
         </ul>
       </section>
 
       <section>
-        <h2 className="text-2xl font-semibold mb-2 text-blue-400">3. Third-Party Services</h2>
+        <h2 className="text-2xl font-semibold mb-3 text-blue-400">4. Log Files</h2>
         <p className="text-gray-300">
-          We aggregate news from <strong>NewsData.io</strong>. By using our service, you acknowledge that content is sourced from third parties. We are not responsible for the privacy practices of external sites you may visit via our links.
+          Local News India follows a standard procedure of using log files. These files log visitors when they visit websites. All hosting companies do this and a part of hosting services' analytics. The information collected by log files include internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp, referring/exit pages, and possibly the number of clicks. These are not linked to any information that is personally identifiable. The purpose of the information is for analyzing trends, administering the site, tracking users' movement on the website, and gathering demographic information.
         </p>
       </section>
 
       <section>
-        <h2 className="text-2xl font-semibold mb-2 text-blue-400">4. Your Rights (GDPR & CCPA)</h2>
+        <h2 className="text-2xl font-semibold mb-3 text-blue-400">5. Cookies and Web Beacons</h2>
         <p className="text-gray-300">
-          Depending on your location, you may have rights regarding your data (e.g., the right to opt-out of personalized ads). We respect these rights and provide mechanisms via our Consent Management Platform (if applicable) or browser settings to control your preferences.
+          Like any other website, Local News India uses 'cookies'. These cookies are used to store information including visitors' preferences, and the pages on the website that the visitor accessed or visited. The information is used to optimize the users' experience by customizing our web page content based on visitors' browser type and/or other information.
+        </p>
+      </section>
+
+      <section className="bg-white/5 p-6 rounded-xl border border-blue-500/30">
+        <h2 className="text-2xl font-semibold mb-3 text-yellow-400">6. Google DoubleClick DART Cookie</h2>
+        <p className="text-gray-300 mb-3">
+          Google is one of a third-party vendor on our site. It also uses cookies, known as DART cookies, to serve ads to our site visitors based upon their visit to www.localnewsindia.in and other sites on the internet. However, visitors may choose to decline the use of DART cookies by visiting the Google ad and content network Privacy Policy at the following URL – <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noreferrer" className="text-blue-400 hover:underline">https://policies.google.com/technologies/ads</a>
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-semibold mb-3 text-blue-400">7. Advertising Partners Privacy Policies</h2>
+        <p className="text-gray-300 mb-3">
+          You may consult this list to find the Privacy Policy for each of the advertising partners of Local News India.
+        </p>
+        <p className="text-gray-300 mb-3">
+          Third-party ad servers or ad networks uses technologies like cookies, JavaScript, or Web Beacons that are used in their respective advertisements and links that appear on Local News India, which are sent directly to users' browser. They automatically receive your IP address when this occurs. These technologies are used to measure the effectiveness of their advertising campaigns and/or to personalize the advertising content that you see on websites that you visit.
+        </p>
+        <p className="text-gray-300">
+          Note that Local News India has no access to or control over these cookies that are used by third-party advertisers.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-semibold mb-3 text-blue-400">8. Third Party Privacy Policies</h2>
+        <p className="text-gray-300 mb-3">
+          Local News India's Privacy Policy does not apply to other advertisers or websites. Thus, we are advising you to consult the respective Privacy Policies of these third-party ad servers for more detailed information. It may include their practices and instructions about how to opt-out of certain options.
+        </p>
+        <p className="text-gray-300">
+          You can choose to disable cookies through your individual browser options. To know more detailed information about cookie management with specific web browsers, it can be found at the browsers' respective websites.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-semibold mb-3 text-blue-400">9. CCPA Privacy Rights (Do Not Sell My Personal Information)</h2>
+        <p className="text-gray-300 mb-2">Under the CCPA, among other rights, California consumers have the right to:</p>
+        <ul className="list-disc list-inside text-gray-300 space-y-1 ml-4 mb-3">
+          <li>Request that a business that collects a consumer's personal data disclose the categories and specific pieces of personal data that a business has collected about consumers.</li>
+          <li>Request that a business delete any personal data about the consumer that a business has collected.</li>
+          <li>Request that a business that sells a consumer's personal data, not sell the consumer's personal data.</li>
+        </ul>
+        <p className="text-gray-300">
+          If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-semibold mb-3 text-blue-400">10. GDPR Data Protection Rights</h2>
+        <p className="text-gray-300 mb-2">We would like to make sure you are fully aware of all of your data protection rights. Every user is entitled to the following:</p>
+        <ul className="list-disc list-inside text-gray-300 space-y-1 ml-4 mb-3">
+          <li><strong>The right to access</strong> – You have the right to request copies of your personal data. We may charge you a small fee for this service.</li>
+          <li><strong>The right to rectification</strong> – You have the right to request that we correct any information you believe is inaccurate. You also have the right to request that we complete the information you believe is incomplete.</li>
+          <li><strong>The right to erasure</strong> – You have the right to request that we erase your personal data, under certain conditions.</li>
+          <li><strong>The right to restrict processing</strong> – You have the right to request that we restrict the processing of your personal data, under certain conditions.</li>
+          <li><strong>The right to object to processing</strong> – You have the right to object to our processing of your personal data, under certain conditions.</li>
+          <li><strong>The right to data portability</strong> – You have the right to request that we transfer the data that we have collected to another organization, or directly to you, under certain conditions.</li>
+        </ul>
+        <p className="text-gray-300">
+          If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-semibold mb-3 text-blue-400">11. Children's Information</h2>
+        <p className="text-gray-300 mb-3">
+          Another part of our priority is adding protection for children while using the internet. We encourage parents and guardians to observe, participate in, and/or monitor and guide their online activity.
+        </p>
+        <p className="text-gray-300">
+          Local News India does not knowingly collect any Personal Identifiable Information from children under the age of 13. If you think that your child provided this kind of information on our website, we strongly encourage you to contact us immediately and we will do our best efforts to promptly remove such information from our records.
         </p>
       </section>
 
       <section className="mt-8 pt-6 border-t border-gray-700">
         <h2 className="text-xl font-semibold mb-2">Contact Us</h2>
         <p className="text-gray-400">
-          If you have questions about this policy, please contact us at: <br />
-          <strong className="text-white">privacy@localnewsindia.in</strong>
+          If you have questions about this Privacy Policy, please contact us at: <br />
+          <strong className="text-white">localnewsappin@gmail.com</strong>
         </p>
       </section>
 

@@ -7,6 +7,9 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 
 import ArticlePage from "./pages/ArticlePage";
+import TermsOfService from "./pages/TermsOfService";
+import Disclaimer from "./pages/Disclaimer";
+
 
 function Particles() {
   return (
@@ -39,6 +42,8 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-of-service" element={<TermsOfService />} />
+          <Route path="/disclaimer" element={<Disclaimer />} />
 
           {/* DYNAMIC ARTICLE PAGE */}
           <Route path="/article/:id" element={<ArticlePage />} />
